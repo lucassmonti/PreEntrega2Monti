@@ -1,0 +1,157 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales de main*/
+
+main{
+    margin: 20px;
+}
+
+/* estilos generales de footer*/
+
+footer{
+    background-color: #F8F9FA;
+    text-align: center;
+}
+
+
+/* estilos de index----------------------------------------------------------------------------------------------------*/
+
+
+/* sizing del logo de nyc para home*/
+#ilnyc {
+    width: 80px;
+}
+
+/* display flex para el formato desktop que incluye la foto en el main*/
+
+.quienessomos {
+    margin: 0 50px;
+    padding: 30px;
+    display: flex;
+    gap: 50px;
+}
+
+/*Voy a esconder la img de la foto grupal en la version mobile del main*/
+
+.fotogrupal {
+    display: none;
+   }
+
+/*megaquery de desktop*/
+
+@media screen and (min-width:1024px){
+    .fotogrupal {
+        display: block;
+        
+    }
+}
+
+/* estilos de Itinerarios ----------------------------------------------------------------------- */
+
+.itinerariodos , .itinerariocuatro {
+    display: flex;
+    gap: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/* media query para ocultar las fotos de itinerarios en mobile*/ 
+
+@media screen and (max-width: 600px){
+    .foto2dias , .foto4dias {
+        display: none;
+    }
+}
+
+/* estilos de Emblematicos -------------------------------------------------------------------------- */
+
+.emblematicos{
+    img{
+        width: 30%;
+    }
+    margin-bottom: 50px;
+    
+}
+
+/*megaquery para desktop*/
+
+@media screen and (min-width: 1024px){
+
+    .divemblematicos{
+        display: flex;
+    gap: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+}
+
+/* estilos de Gastronomía -------------------------------------------------------------------------- */
+
+iframe{
+    display: none;
+}
+
+.mrkhao , .halal , .amorloco , .birria {
+    img{
+       width: 100%;
+    height: 50vh; 
+    }
+}
+
+/* megaquery para tablet & desktop*/
+
+@media screen and (min-width: 1024px){
+    iframe{
+        display: block;
+    }
+}
+
+
+.mrkhao{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+}
+
+.halal {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+}
+
+.amorloco {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+}
+
+.birria {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+}
+
